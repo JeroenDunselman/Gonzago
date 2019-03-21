@@ -16,5 +16,7 @@ class ViewController: UIViewController {
     }
 
     func msg() {}
+    func upgrade() {}
+    
 }
 
