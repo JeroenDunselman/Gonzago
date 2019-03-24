@@ -14,6 +14,7 @@ protocol Conductable {
     func phraseEnded()
     func chordChanged()
     func visualizePlaying(position: CGPoint, velocity: CGFloat) //, chordVariant: Int)
+    func directionChanged()
 }
 
 class Conductor {
@@ -42,6 +43,7 @@ class Conductor {
         client = swipeVC
     }
     
+    var currentDirectionLToR: Bool?
     @objc func gestureAction(_ sender:UIPanGestureRecognizer) {
         let pos = sender.location(in: client.view)
         let velocity = sender.velocity(in: client.view)
@@ -55,13 +57,22 @@ class Conductor {
             triggerEnabled = false
             client.chordChanged()
         }
-
-            //detect change of direction of pan
-        if((velocity.y > 0 && currentVelocity.y < 0) || (velocity.y < 0 && currentVelocity.y > 0)) {
+        
+        //init for first phrase of session
+        if currentDirectionLToR == nil {currentDirectionLToR = (velocity.y > 0)}
+        
+        //direction change
+        let directionChanged = (currentDirectionLToR! && currentVelocity.y < 0)||(!currentDirectionLToR! && currentVelocity.y > 0)
+        if (directionChanged) {
+            currentDirectionLToR = !currentDirectionLToR!
+            
+            client.directionChanged()
+            
             //transport sequence to next note for changed direction and play it
             sequenceIndex += 1
             self.playNextNote()
         }
+
             //update current
         currentVelocity.y = velocity.y
         
