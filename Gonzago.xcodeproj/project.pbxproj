@@ -7,17 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9DF81FB224415FE00B8423C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF81FA224415FE00B8423C /* AppDelegate.swift */; };
-		A9DF81FD224415FE00B8423C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF81FC224415FE00B8423C /* ViewController.swift */; };
+		A904757E2244264F00D57814 /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90475792244264F00D57814 /* Conductor.swift */; };
+		A9047582224426B700D57814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9047581224426B700D57814 /* AppDelegate.swift */; };
+		A904758E2244298200D57814 /* 345px-Chladini2.png in Resources */ = {isa = PBXBuildFile; fileRef = A904758B2244298200D57814 /* 345px-Chladini2.png */; };
+		A904758F2244298200D57814 /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904758C2244298200D57814 /* Fire.swift */; };
+		A90475902244298200D57814 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904758D2244298200D57814 /* ViewController.swift */; };
+		A90475922244299200D57814 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90475912244299200D57814 /* AudioService.swift */; };
+		A9047595224429AD00D57814 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9047593224429AD00D57814 /* AudioKit.framework */; };
+		A9047596224429AD00D57814 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9047594224429AD00D57814 /* AudioKitUI.framework */; };
+		A90475B922442EBA00D57814 /* Scales.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90475B822442EBA00D57814 /* Scales.swift */; };
 		A9DF8200224415FE00B8423C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DF81FE224415FE00B8423C /* Main.storyboard */; };
 		A9DF82022244160E00B8423C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DF82012244160E00B8423C /* Assets.xcassets */; };
 		A9DF82052244160E00B8423C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DF82032244160E00B8423C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A90475792244264F00D57814 /* Conductor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
+		A9047581224426B700D57814 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Gonzago/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		A904758B2244298200D57814 /* 345px-Chladini2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "345px-Chladini2.png"; sourceTree = "<group>"; };
+		A904758C2244298200D57814 /* Fire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
+		A904758D2244298200D57814 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A90475912244299200D57814 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		A9047593224429AD00D57814 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Gonzago/AudioKit.framework; sourceTree = "<group>"; };
+		A9047594224429AD00D57814 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = Gonzago/AudioKitUI.framework; sourceTree = "<group>"; };
+		A90475B822442EBA00D57814 /* Scales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scales.swift; sourceTree = "<group>"; };
 		A9DF81F7224415FE00B8423C /* Gonzago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gonzago.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9DF81FA224415FE00B8423C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9DF81FC224415FE00B8423C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9DF81FF224415FE00B8423C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9DF82012244160E00B8423C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DF82042244160E00B8423C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +43,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9047595224429AD00D57814 /* AudioKit.framework in Frameworks */,
+				A9047596224429AD00D57814 /* AudioKitUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A90475712244251600D57814 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A90475912244299200D57814 /* AudioService.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		A90475782244264F00D57814 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A90475792244264F00D57814 /* Conductor.swift */,
+			);
+			name = ViewModel;
+			path = Gonzago/ViewModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		A90475832244273200D57814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9047593224429AD00D57814 /* AudioKit.framework */,
+				A9047594224429AD00D57814 /* AudioKitUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A904758A2244298200D57814 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A904758B2244298200D57814 /* 345px-Chladini2.png */,
+				A904758C2244298200D57814 /* Fire.swift */,
+				A904758D2244298200D57814 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A90475B722442EBA00D57814 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A90475B822442EBA00D57814 /* Scales.swift */,
+			);
+			name = Model;
+			path = Gonzago/Model;
+			sourceTree = SOURCE_ROOT;
+		};
 		A9DF81EE224415FE00B8423C = {
 			isa = PBXGroup;
 			children = (
 				A9DF81F9224415FE00B8423C /* Gonzago */,
 				A9DF81F8224415FE00B8423C /* Products */,
+				A90475832244273200D57814 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +116,11 @@
 		A9DF81F9224415FE00B8423C /* Gonzago */ = {
 			isa = PBXGroup;
 			children = (
-				A9DF81FA224415FE00B8423C /* AppDelegate.swift */,
-				A9DF81FC224415FE00B8423C /* ViewController.swift */,
+				A904758A2244298200D57814 /* View */,
+				A90475782244264F00D57814 /* ViewModel */,
+				A90475B722442EBA00D57814 /* Model */,
+				A90475712244251600D57814 /* Audio */,
+				A9047581224426B700D57814 /* AppDelegate.swift */,
 				A9DF81FE224415FE00B8423C /* Main.storyboard */,
 				A9DF82012244160E00B8423C /* Assets.xcassets */,
 				A9DF82032244160E00B8423C /* LaunchScreen.storyboard */,
@@ -123,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9DF82052244160E00B8423C /* LaunchScreen.storyboard in Resources */,
+				A904758E2244298200D57814 /* 345px-Chladini2.png in Resources */,
 				A9DF82022244160E00B8423C /* Assets.xcassets in Resources */,
 				A9DF8200224415FE00B8423C /* Main.storyboard in Resources */,
 			);
@@ -135,8 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DF81FD224415FE00B8423C /* ViewController.swift in Sources */,
-				A9DF81FB224415FE00B8423C /* AppDelegate.swift in Sources */,
+				A90475B922442EBA00D57814 /* Scales.swift in Sources */,
+				A90475902244298200D57814 /* ViewController.swift in Sources */,
+				A904758F2244298200D57814 /* Fire.swift in Sources */,
+				A904757E2244264F00D57814 /* Conductor.swift in Sources */,
+				A9047582224426B700D57814 /* AppDelegate.swift in Sources */,
+				A90475922244299200D57814 /* AudioService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +354,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VGL2XRGNT;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Gonzago";
 				INFOPLIST_FILE = Gonzago/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.Gonzago;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -302,11 +374,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VGL2XRGNT;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Gonzago";
 				INFOPLIST_FILE = Gonzago/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.Gonzago;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
